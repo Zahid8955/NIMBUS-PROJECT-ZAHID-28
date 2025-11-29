@@ -16,3 +16,6 @@ task_manager
 # IDE files
 .vscode/
 .idea/
+
+# CodeQL files
+_codeql_detected_source_root
