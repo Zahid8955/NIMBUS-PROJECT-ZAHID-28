@@ -17,7 +17,10 @@
 #define MAX_TAG_LEN 30
 #define MAX_TAGS_PER_TASK 5
 #define MAX_DATE_LEN 20
+#define MAX_RESPONSE_LEN 10
 #define INITIAL_CAPACITY 10
+#define MIN_VALID_YEAR 2020
+#define MAX_VALID_YEAR 2100
 
 /* ==================== Enumerations ==================== */
 

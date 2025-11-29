@@ -315,7 +315,7 @@ void displayTagDistribution(const TaskList *taskList) {
             if (!found) {
                 /* Add new tag */
                 if (tagCountSize >= tagCountCapacity) {
-                    tagCountCapacity = tagCountCapacity == 0 ? 10 : tagCountCapacity * 2;
+                    tagCountCapacity = tagCountCapacity == 0 ? INITIAL_CAPACITY : tagCountCapacity * 2;
                     TagCount *newTagCounts = realloc(tagCounts, tagCountCapacity * sizeof(TagCount));
                     if (newTagCounts == NULL) {
                         free(tagCounts);

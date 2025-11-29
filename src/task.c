@@ -588,7 +588,7 @@ int isValidDateFormat(const char *date) {
     int year, month, day;
     if (sscanf(date, "%d-%d-%d", &year, &month, &day) != 3) return 0;
     
-    if (year < 2020 || year > 2100) return 0;
+    if (year < MIN_VALID_YEAR || year > MAX_VALID_YEAR) return 0;
     if (month < 1 || month > 12) return 0;
     if (day < 1 || day > 31) return 0;
     

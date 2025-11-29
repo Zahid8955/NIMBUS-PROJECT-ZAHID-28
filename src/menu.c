@@ -237,8 +237,8 @@ void taskManagementMenu(TaskList *taskList, UserList *userList) {
                     /* Ask if user wants to assign immediately */
                     if (userList->count > 0) {
                         printf("\nDo you want to assign this task now? (y/n): ");
-                        char resp[10];
-                        getStringInput("", resp, 10);
+                        char resp[MAX_RESPONSE_LEN];
+                        getStringInput("", resp, MAX_RESPONSE_LEN);
                         if (resp[0] == 'y' || resp[0] == 'Y') {
                             displayAllUsers(userList);
                             int userId = getIntInput("Enter User ID to assign: ", 1, 9999);
@@ -544,8 +544,8 @@ void taskOperationsMenu(TaskList *taskList, UserList *userList) {
                 
                 if (task != NULL) {
                     printf("Are you sure you want to delete '%s'? (y/n): ", task->title);
-                    char confirm[10];
-                    getStringInput("", confirm, 10);
+                    char confirm[MAX_RESPONSE_LEN];
+                    getStringInput("", confirm, MAX_RESPONSE_LEN);
                     
                     if (confirm[0] == 'y' || confirm[0] == 'Y') {
                         /* Update user stats if task was assigned */
