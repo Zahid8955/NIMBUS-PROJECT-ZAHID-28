@@ -1,0 +1,18 @@
+# Build artifacts
+build/
+task_manager
+
+# Object files
+*.o
+
+# Debug files
+*.dSYM/
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# IDE files
+.vscode/
+.idea/
